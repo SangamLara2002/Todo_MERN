@@ -35,7 +35,7 @@ function App() {
       console.log(item.data)
     }
     getAllData();
-  },[])
+  },[allTask])
 
   async function deleteTask(id) {
     await axios.delete("http://localhost:5000/del/" + id);
